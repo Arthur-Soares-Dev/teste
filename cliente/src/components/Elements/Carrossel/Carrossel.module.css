@@ -1,0 +1,65 @@
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  margin-bottom: 5vh;
+}
+  
+.slider {
+  
+  margin: 0 auto;
+} 
+
+.slideItem {
+  padding: 0 10px; /* Espaçamento entre os slides */
+}
+
+.slideInner {
+  height: 30%; /* Altura do slide ajustada */
+  border-radius: 8px;
+  overflow: hidden;
+
+}
+
+.slideInner a{
+  text-decoration: none;
+}
+
+.thumbnail {
+  width: 100%; /* A imagem preenche completamente o espaço do slide */
+  height: 100%; /* Altura do slide */
+  object-fit: cover; /* Para garantir que a imagem cubra o espaço */
+  display: block;
+}
+
+.description {
+  padding: 10px;
+  background: none;
+  color: white;
+  text-align: left;
+}
+
+.description p{
+  margin-bottom: 2vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.saibaMais{
+  color: #F2295F;
+}
+
+@media(max-width: 480px) {
+  .responsiveDescription {
+    display: none;
+  }
+
+  .saibaMais{
+   display: none;
+  }
+
+  .container {
+    padding: 10px;
+  }
+    
+
+}

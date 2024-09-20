@@ -1,0 +1,82 @@
+.socialDiv{
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+}
+
+.imgContainer{
+    display: flex;
+    width: 100%;
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+    justify-content: flex-start;
+}
+
+.misteryImg{
+    width: 20%;
+    height: 30vh;
+    border-radius: 20px;
+    margin-right: 5%;
+    background-image: url(/src/assets/Images/misteryImage.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.imgContainer p{
+    line-height: 1.7em;
+    font-size: 27px;
+    width: 70%;
+    text-align: justify;
+}
+
+.redeContainer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.redeSocial{
+    list-style: none;
+    margin-right: 2%;
+}
+
+
+/* Telas Médias */
+@media (min-width: 481px) and (max-width: 1024px) {
+    .misteryImg{
+        width: 40%;
+    }
+}
+
+/* Telas Pequenas */
+@media(max-width: 480px) {
+    .imgContainer{
+        display: block;
+        width: 100%;
+        margin-bottom: 5vh;
+        margin-top: 5vh;
+    }
+
+    .imgContainer p{
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .misteryImg{
+        width: 100%;
+        margin-right: 0%;
+        margin-bottom: 3vh;
+    }
+
+    .responsiveText{
+        display: none;
+    }
+
+    .redeContainer{
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+}
